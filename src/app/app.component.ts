@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'boothcamp-H1';
+  title = 'bootcamp-H1 Belajar angular gan';
+  // ini variabel binding
+  nama =' ';
 }

@@ -1,0 +1,30 @@
+<h4>Add New Friend</h4>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <!-- Nama -->
+      <div class="form-group row">
+        <label for="inputName" class="col-sm-3 form-control-label">Name</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" [(ngModel)]="inputInfo.nama" id="inputName" #inputNama>
+        </div>
+      </div>
+      <!-- Email -->
+      <div class="form-group row">
+        <label for="inputEmail" class="col-sm-3 form-control-label">Email</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" [(ngModel)]="inputInfo.email" id="inputEmail" #inputEmail>
+        </div>
+      </div>
+      <!-- Contac -->
+      <div class="form-group row">
+        <label for="inputContac" class="col-sm-3 form-control-label">Contact No</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" [(ngModel)]="inputInfo.noTlpn" id="inputContact" #inputContact>
+        </div>
+      </div>
+      <button type="add" class="btn btn-danger" (click)="tambahTeman(inputEmail)">Add Friend</button>
+    </div>
+  </div>
+</div>
