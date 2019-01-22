@@ -9,6 +9,7 @@ import{Teman} from './teman.model';
 export class TemanComponent implements OnInit {
 
   temanList: Teman[]=[];
+  temanEdit: Teman= new Teman();
   // temanEdit: Teman= new teman();
 
   constructor() { }
@@ -21,8 +22,10 @@ export class TemanComponent implements OnInit {
     this.temanList.push(temanInfo);
   }
 
-  // onTemanEdit(temanInfo: Teman){
-  //   this.temanEdit=temanInfo;
-  // }
+
+  onTemanEdit(temanInfo: Teman){
+    this.temanEdit=temanInfo;
+    console.log(this.temanEdit);
+  }
 
 }
