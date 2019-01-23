@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Teman } from './teman.model';
 
 @Injectable({
   providedIn: 'root'
@@ -6,4 +7,9 @@ import { Injectable } from '@angular/core';
 export class TemansService {
 
   constructor() { }
+
+  convertTeman(temanInfo: Teman): Teman{
+    temanInfo.nama = temanInfo.nama.toUpperCase()+' - edited';
+    return temanInfo;
+  }
 }
