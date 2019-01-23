@@ -13,8 +13,13 @@ export class TemanAddComponent implements OnInit {
   inputInfo:Teman = new Teman();
   @ViewChild('inputContact')inputContact:ElementRef;
   @ViewChild('inputNama')inputNama:ElementRef;
+
   @Output() temanAdded = new EventEmitter<Teman>();
 
+  @Input() temanChildLteman: Teman;
+  @Input() temanEditParent: Teman;
+
+  // inputInfo: Teman = new Teman;
 
   constructor() { }
 
@@ -25,8 +30,8 @@ export class TemanAddComponent implements OnInit {
     // this.temanAdded.emit(this.inputInfo);
     console.log(this.inputInfo);
     console.log(inputEmail.value);
-  
     console.log(this.inputContact.nativeElement.value);
+
     this.temanAdded.emit(this.inputInfo);
     this.inputInfo= new Teman();
   }

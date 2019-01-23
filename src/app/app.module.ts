@@ -7,13 +7,15 @@ import { from } from 'rxjs';
 import { TemanComponent } from './teman/teman.component';
 import { TemanAddComponent } from './teman/teman-add/teman-add.component';
 import { TemanListComponent } from './teman/teman-list/teman-list.component';
+import { HoverHighlightDirective } from './hover-highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     TemanComponent,
     TemanAddComponent,
-    TemanListComponent
+    TemanListComponent,
+    HoverHighlightDirective
   ],
   imports: [
     BrowserModule,
