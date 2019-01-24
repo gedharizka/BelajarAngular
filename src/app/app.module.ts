@@ -8,6 +8,10 @@ import { TemanComponent } from './teman/teman.component';
 import { TemanAddComponent } from './teman/teman-add/teman-add.component';
 import { TemanListComponent } from './teman/teman-list/teman-list.component';
 import { HoverHighlightDirective } from './hover-highlight.directive';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +19,11 @@ import { HoverHighlightDirective } from './hover-highlight.directive';
     TemanComponent,
     TemanAddComponent,
     TemanListComponent,
-    HoverHighlightDirective
+    HoverHighlightDirective,
+    ContactUsComponent,
+    HeaderComponent,
+    HomeComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

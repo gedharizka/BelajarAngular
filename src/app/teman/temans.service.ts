@@ -10,6 +10,7 @@ export class TemansService {
 
   convertTeman(temanInfo: Teman): Teman{
     temanInfo.nama = temanInfo.nama.toUpperCase()+' - edited';
+    
     return temanInfo;
   }
 }
